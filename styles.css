@@ -50,6 +50,7 @@ button{
 }
 .checkbox:checked + label {
     text-decoration: line-through;
+    color: gray;
 }
 
 button:hover{
