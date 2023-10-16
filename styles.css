@@ -1,0 +1,41 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Mulish', sans-serif;
+}
+
+body{
+    text-align: center;
+    background-color: rgb(183, 181, 181);
+}
+h1{
+    font-weight: 900;
+}
+.container{
+    box-sizing: border-box;
+    border: 0.5px rgb(214, 210, 210) solid;
+    padding: 10px 10px;
+    margin: 50px 200px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;;
+    background-color: white;
+}
+button{
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    margin-top: 10px;
+    padding: 5px;
+}
+input{
+    font-size: large;
+}
+.task-item{
+    list-style: none;
+    text-align: left;
+    
+}
+.checkbox{
+    margin-right: 10px;
+    text-decoration: line-through;
+}
