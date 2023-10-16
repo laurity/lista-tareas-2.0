@@ -9,24 +9,26 @@ document.addEventListener('DOMContentLoaded', ()=>{
         if (textInto != "") {
           newTask(textInto);
           text.value = "";
+          text.focus();
         }
     })
 
-    text.addEventListener('keydown', function(event){
-        if(event.key === 'Enter'){
-            const textInto = text.value.trim();
-            if (textInto != "") {
-              newTask(textInto);
-              text.value = "";
-            } 
+    text.addEventListener("keydown", function (event) {
+      if (event.key === "Enter") {
+        const textInto = text.value.trim();
+        if (textInto != "") {
+          newTask(textInto);
+          text.value = "";
         }
-        
-    })
+      }
+    });
 
     const newTask = (text) =>{
         const newTarea = document.createElement("li");
         newTarea.classList.add("task-item");
-        newTarea.innerHTML=`<input type="checkbox" class="checkbox" id="checkbox"><label>${text}</label>`;
+        newTarea.innerHTML=`
+        <input type="checkbox" class="checkbox" id="checkbox">
+        <label>${text}</label>`;
         task.appendChild(newTarea);
 
         deleteAll.addEventListener('click', () =>{  
